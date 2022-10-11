@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --bg: #000000;
+  --bg-card: #0e1218;
+  --text: #f1f1f1;
+  --img-profile: #8257e5;
+  --buttons: #fff;
+  --border-button: #1a1a1a;
+
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bg-card);
+}
+
+.wrapper {
+  width: min(140rem, 100%);
+  padding-inline: 26rem;
+  margin-inline: auto;
+
+  margin-top: 6rem;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.card {
+  padding: 1.6rem 2.4rem;
+  background-color: #000000;
+
+  border-radius: 5rem;
+}
+
+.card-content {
+  width: 40.7rem;
+  height: 64.4rem;
+
+  padding: 2rem;
+
+  border-radius: 5rem;
+
+  background-color: var(--bg-card);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+
+  gap: 2rem;
+}
+
+.card-header a {
+  display: flex;
+  justify-content: center;
+
+  width: 5.5rem;
+  height: 5.5rem;
+
+  border: 1px solid var(--buttons);
+  border-radius: 50%;
+}
+
+.card-header a img {
+  width: 3rem;
+}
+
+.card-header p {
+  font-size: 24px;
+  color: var(--text);
+}
+
+.card-info {
+  width: 19.5rem;
+  height: 19.5rem;
+
+  margin-top: 26rem;
+
+  display: flex;
+
+  padding: 3rem 2rem;
+
+  border-radius: 5rem;
+  background: linear-gradient(
+    180deg,
+    #000000 3.65%,
+    rgba(70, 69, 69, 0.72) 53.65%,
+    rgba(62, 56, 56, 0.42) 100%
+  );
+}
+
+.card-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info ul li {
+  display: flex;
+  text-align: center;
+
+  gap: 1rem;
+}
+
+.card-info ul li span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 3rem;
+}
+
+.card-footer a {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+
+  text-transform: uppercase;
+}
+
+.card-footer img {
+  width: 2.8rem;
+}
+
+.button {
+  text-align: center;
+
+  padding-block: 30rem;
+}
+
+.button p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+
+  margin-bottom: 3rem;
+}
+
+.button button {
+  width: 23rem;
+  height: 6rem;
+
+  padding: 1.8rem 4.6rem;
+
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+
+  border: 2px solid var(--border-button);
+  border-radius: 1.5rem;
+
+  background-color: var(--bg);
+
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+
+.button button:hover {
+  background-color: var(--bg-card);
+}

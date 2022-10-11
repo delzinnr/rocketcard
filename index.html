@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div id="card" class="card">
+          <div class="card-content">
+            <div class="card-header">
+              <a href="#"
+                ><img src="./assets/logo.svg" alt="Logo da Rocketseat"
+              /></a>
+              <p>delzinnr</p>
+            </div>
+            <div class="card-info">
+              <ul>
+                <li>
+                  <img
+                    src="./assets/followers.svg"
+                    alt="Ícone representando os seguidores"
+                  />
+                  <span id="followers"></span>
+                </li>
+                <li>
+                  <img
+                    src="./assets/following.svg"
+                    alt="Ícone representando quantidade que está seguindo"
+                  />
+                  <span id="following"></span>
+                </li>
+                <li>
+                  <img
+                    src="./assets/repository.svg"
+                    alt="Ícone representando os repositórios"
+                  />
+                  <span id="repository"></span>
+                </li>
+                <li>
+                  <img
+                    src="./assets/company.svg"
+                    alt="Ícone representando a companhia que trabalha"
+                  />
+                  <span id="company"></span>
+                </li>
+                <li>
+                  <img
+                    src="./assets/location.svg"
+                    alt="Ícone representando a localização"
+                  />
+                  <span id="location"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href=""
+                ><img
+                  src="./assets/logo.svg"
+                  alt="Logo da Rocketseat"
+                />Rocketcard</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <p>Customizar Rocketcard</p>
+          <button onclick="changeColor()">Gerar background</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
